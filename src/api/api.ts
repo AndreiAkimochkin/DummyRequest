@@ -10,7 +10,7 @@ import axios from 'axios'
 
 // Create instance
 const instance = axios.create({
-    baseURL: 'http://dummy.restapiexample.com/api/v1/',
+    baseURL: 'https://dummy.restapiexample.com/api/v1/',
     // ...settings
 })
 
