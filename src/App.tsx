@@ -6,7 +6,6 @@ import {RequestStatusType} from "./reducers/app-reducer";
 import {CircularProgress, TableCell, TableRow, Table} from "@material-ui/core";
 import Typography from '@material-ui/core/Typography';
 
-
 function App() {
     const dispatch = useDispatch()
     const status = useSelector<AppRootStateType, RequestStatusType>((state) => state.app.status)
@@ -15,7 +14,7 @@ function App() {
 
     useEffect(() => {
         dispatch(getDummyTC())
-    }, [dispatch])
+    }, [])
 
 
     if (status === 'loading') {
